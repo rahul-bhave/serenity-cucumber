@@ -13,4 +13,8 @@ public class Navigate {
     public static Performable IsOnTransferFundPage() {
         return Open.url("http://altoromutual.com/bank/transfer.jsp");
     }
+
+    public static Performable IsFundTransferSuccessful() {
+        return Open.url("http://altoromutual.com/bank/doTransfer");
+    }
 }
