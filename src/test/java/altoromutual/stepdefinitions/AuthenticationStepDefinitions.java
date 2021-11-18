@@ -15,6 +15,7 @@ public class AuthenticationStepDefinitions {
     public void on_the_login_page(Actor actor) {
         actor.attemptsTo(Open.url("http://altoromutual.com/login.jsp"));
     }
+
     @When("{actor} log in with valid credentials")
     public void log_in_with_valid_credentials(Actor actor) {
         actor.attemptsTo(
@@ -26,4 +27,5 @@ public class AuthenticationStepDefinitions {
         actor.attemptsTo(
                 Ensure.that(Text.of("/html/body/table[2]/tbody/tr/td[2]/div/h1")).isEqualTo("Hello Admin User"));
     }
+
 }
