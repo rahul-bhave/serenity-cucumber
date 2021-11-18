@@ -9,4 +9,8 @@ public class Navigate {
     public static Performable IsOnTheBankPage() {
         return Open.url("http://altoromutual.com/bank/main.jsp");
     }
+
+    public static Performable IsOnTransferFundPage() {
+        return Open.url("http://altoromutual.com/bank/transfer.jsp");
+    }
 }
